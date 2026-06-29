@@ -12,4 +12,10 @@ public class IsocelesRightTriangleTest {
         IsocelesRightTriangle triangle = new IsocelesRightTriangle(5);
         assertEquals(17.071, triangle.getPerimeter(), 0.001);
     }
+    @Test
+    public void testIsocelesRightTriangleNumberOfSides() {
+        IsocelesRightTriangle triangle = new IsocelesRightTriangle(5);
+
+        assertEquals(3, triangle.numberOfSides());
+    }
 }
